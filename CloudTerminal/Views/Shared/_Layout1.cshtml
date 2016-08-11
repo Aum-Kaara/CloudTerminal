@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - CloudSense</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body ng-app="AzureApp" ng-controller="MasterController">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a href="#" class="navbar-brand">
+
+                    <i class="glyphicon glyphicon-cloud"></i> Cloud
+                    Terminal <i class="fa fa-plane fa-fw"></i>
+                </a>
+                <span class="glyphicon glyphicon-cloud" aria-hidden="true"></span>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#/Features">Features</a></li>
+                    <li><a href='@Url.Action("Dashboard", "Home")'>Dashboard</a></li>
+                    <li><a href="#">Help</a></li>
+
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" aria-expanded="false">
+                            <i class="fa fa-user fa-fw"></i>
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li>
+                                <a href="#/UserProfile">
+                                    <i class="fa fa-user fa-fw"></i> User Profile
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-target="#commonModalDialog" data-toggle="modal">
+                                    <i class="fa fa-Envelope fa-fw"></i> Connect Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-gear fa-fw"></i> Settings
+                                </a>
+                            </li>
+
+                            <li class="divider"></li>
+                            <li>
+                                <a href="Account/Login" ui-sref="login" ng-hide="userInfo.isAuthenticated" >
+                                    <i class="fa fa-sign-in fa-fw"></i> Login
+                                </a>
+                                <a href="#" ui-sref="login" ng-show="userInfo.isAuthenticated" ng-click="logout()">
+                                    <i class="fa fa-sign-out fa-fw"></i> Logout
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- /.dropdown-user -->
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-right">
+                    <input type="text" placeholder="Search..." class="form-control">
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container body-content">
+        @RenderBody()
+        <div ng-view>
+
+        </div>
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - CloudSense</p>
+        </footer>
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/angular")
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

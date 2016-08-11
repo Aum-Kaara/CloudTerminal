@@ -1,0 +1,158 @@
+﻿
+<div ng-init="ListAllBoardResources()">
+
+    <div class="row">
+        <div id="filters" class="btn-group pull-right">
+            <a href="javascript:;" ng-click="statusFilter=null" ng-class="{active: statusFilter==null} " class="btn btn-primary"><i class="fa  icon-azure-icon-microsoft-azure"></i>All</a>
+            <a href="javascript:;" ng-click="statusFilter={DataService:true}" ng-class="{active: statusFilter.DataService}" class="btn btn-primary"><i class="fa  icon-azure-icon-data-services"></i>Data Service</a>
+            <a href="javascript:;" ng-click="statusFilter={Compute:true}" ng-class="{active: statusFilter.Compute}" class="btn btn-primary"><i class="fa  icon-azure-icon-compute"></i>Compute</a>
+            <a href="javascript:;" ng-click="statusFilter={AppServices:true}" ng-class="{active: statusFilter.AppServices}" class="btn btn-primary"><i class="fa  icon-azure-icon-app-services fa"></i>App Services</a>
+        </div>
+    </div>
+   
+    <div class="row" style="margin-top:10px">
+        <div class=" col-lg-3 col-md-6 ng-isolate-scope" ng-show="statusFilter.Compute ==true || statusFilter == null">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <i class="fa icon-azure-icon-virtual-machine fa-5x"></i>
+                        </div>
+                        <div class="col-xs-9 text-right">
+                            <div class="huge ng-binding">{{VMList.length}}</div>
+                            <div class="ng-binding">Virtual Machines</div>
+                        </div>
+                    </div>
+                </div>
+                <a ui-sref="home.Dashboard.VirtualMachines">
+                    <div class="panel-footer">
+                        <span class="pull-left">View Details</span>
+                        <span class="pull-right">
+                            <i class="fa fa-arrow-circle-right"></i>
+                        </span>
+                        <div class="clearfix"></div>
+                    </div>
+                </a>
+
+
+            </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 ng-isolate-scope" ng-show="statusFilter.DataService ==true || statusFilter == null">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <i class="fa icon-azure-icon-sql-database-generic fa-5x"></i>
+                        </div>
+                        <div class="col-xs-9 text-right">
+                            <div class="huge ng-binding">{{SQLServerList.length}}</div>
+                            <div class="ng-binding">SQL Databases</div>
+                        </div>
+                    </div>
+                </div>
+                <a ui-sref="home.Dashboard.SQLDatabases">
+                    <div class="panel-footer">
+                        <span class="pull-left">View Details</span>
+                        <span class="pull-right">
+                            <i class="fa fa-arrow-circle-right"></i>
+                        </span>
+                        <div class="clearfix"></div>
+                    </div>
+                </a>
+
+
+            </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 ng-isolate-scope" ng-show="statusFilter.DataService ==true || statusFilter == null">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <i class="fa icon-azure-icon-storage-azure fa-5x"></i>
+                        </div>
+                        <div class="col-xs-9 text-right">
+                            <div class="huge ng-binding">{{StorageList.length}}</div>
+                            <div class="ng-binding">Storage</div>
+                        </div>
+                    </div>
+                </div>
+                <a ui-sref="home.Dashboard.Storage">
+                    <div class="panel-footer">
+                        <span class="pull-left">View Details</span>
+                        <span class="pull-right">
+                            <i class="fa fa-arrow-circle-right"></i>
+                        </span>
+                        <div class="clearfix"></div>
+                    </div>
+                </a>
+
+
+            </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 ng-isolate-scope" ng-show="statusFilter.Compute == true || statusFilter == null">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <i class="fa icon-azure-icon-azure-websites fa-5x"></i>
+                        </div>
+                        <div class="col-xs-9 text-right">
+                            <div class="huge ng-binding">{{WebsiteList.length}}</div>
+                            <div class="ng-binding">Web Apps</div>
+                        </div>
+                    </div>
+                </div>
+                <a ui-sref="home.Dashboard.WebSites">
+                    <div class="panel-footer">
+                        <span class="pull-left">View Details</span>
+                        <span class="pull-right">
+                            <i class="fa fa-arrow-circle-right"></i>
+                        </span>
+                        <div class="clearfix"></div>
+                    </div>
+                </a>
+
+
+            </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 ng-isolate-scope" ng-show="statusFilter.AppServices == true || statusFilter == null">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <i class="fa icon-azure-icon-service-bus fa-5x"></i>
+                        </div>
+                        <div class="col-xs-9 text-right">
+                            <div class="huge ng-binding">{{ServiceBusList.length}}</div>
+                            <div class="ng-binding">Service Bus</div>
+                        </div>
+                    </div>
+                </div>
+                <a ui-sref="home.Dashboard.ServiceBus">
+                    <div class="panel-footer">
+                        <span class="pull-left">View Details</span>
+                        <span class="pull-right">
+                            <i class="fa fa-arrow-circle-right"></i>
+                        </span>
+                        <div class="clearfix"></div>
+                    </div>
+                </a>
+
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+

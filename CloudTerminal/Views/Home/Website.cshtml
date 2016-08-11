@@ -1,0 +1,71 @@
+﻿<div ng-init="">
+
+
+    <div class="table-responsive ng-scope">
+        <table class="table table-striped table-condensed pull-down">
+            <thead>
+                <tr>
+                    <th><a ng-click="sortBy('name')" href="javascript:;">Name</a></th>
+                    <th><a ng-click="sortBy('browser')" href="javascript:;">Location</a></th>
+                    <th><a ng-click="sortBy('browser')" href="javascript:;">Resource Group</a></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="networkList">
+                <tr ng-repeat="item in WebsiteList" class="ng-scope">
+                    <td><button class="btn btn-link" data-target="#commonModalDialog" data-toggle="modal" type="button" ng-click="GetItemDetail(item)">{{item.name}}</button></td>
+                    <td class="ng-binding">{{item.location}}</td>
+                    <td class="ng-binding">{{Split(item.id,'/',4)}}</td>
+                    <td class="text-right"><i class="fa icon-azure-icon-azure-websites fa-2x" title="Responsive device"></i></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div tabindex="-1" class="modal in" id="commonModalDialog" role="dialog" aria-hidden="false" aria-labelledby="myModalLabel" style="display: none;" data-keyboard="false" data-backdrop="static">
+        <div class="modal-dialog" id="commonModalDialogBox">
+            <div class="modal-content" id="commonModalDialogContent" style="top: 90.5px;">
+                <div class="modal-header">
+                    <button title="Close" class="close" id="btnXViewDatabaseServer" aria-hidden="true" type="button" data-dismiss="modal">×</button>
+                    <h4 class="modal-title" id="myModalLabel">Web Apps Properties</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="tab-content">
+                        <div id="General" class="tab-pane fade active in " style="padding-top:20px">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 no-left-padding no-right-padding">
+                                    <p class="control-group">
+                                        <label class="control-label">Name</label>:
+                                        <br>
+                                        <input name="" class="form-control" id="" ng-model="Item.name" type="text" readonly="readonly">
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 no-left-padding">
+                                    <p class="control-group">
+                                        <label class="control-label">Host Name</label>:
+                                        <br>
+                                        <input name="" class="form-control" id="" type="text" readonly="readonly" ng-model="Item.properties.defaultHostName">
+                                    </p>
+                                </div>
+                                <div class="col-md-6 col-sm-6 no-right-padding">
+                                    <p class="control-group">
+                                        <label class="control-label">State</label>:
+                                        <br>
+                                        <input name="" class="form-control" id="" type="text" readonly="readonly" ng-model="Item.properties.state">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-link" type="button" data-dismiss="modal">
+                        <i class="fa fa-remove fa-2x"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,74 @@
+﻿<div ng-init="initializeController()">
+    <ol ng-show="breadcrumb!=null" class="breadcrumb clearfix" breadcrumb="">
+        <!-- ngRepeat: crumb in breadcrumb -->
+        <li ng-repeat="crumb in breadcrumb" ng-class="{active: crumb.link==undefined||crumb.link==null}" class="ng-scope"><a href="{{crumb.link}}" class="ng-binding">{{crumb.label}}</a></li><!-- end ngRepeat: crumb in breadcrumb --><!-- end ngRepeat: crumb in breadcrumb -->
+    </ol>
+    <div class="row clearfix margin-bottom-40">
+        <div class="container">
+            <div role="main" class="col-md-12">
+                <div data-wow-duration="1s" class=" wow fadeIn">
+                    <h3 class="page-header">What is Cloud Terminal?</h3>
+                    <p>
+                        Cloud Terminal is an application running in Azure which allows you to manage your Azure resources using only a browser.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row clearfix margin-bottom-20">
+        <div data-wow-delay="0.5s" data-wow-duration="2s" class="col-md-4 column wow fadeIn margin-bottom-20">
+            <div class="text-center">
+                <div class=""><a style="color: inherit;" href=""><i class="fa icon-azure-icon-virtual-machine fa-5x "></i></a></div>
+                <h3><a style="color: inherit;" href="">VIRTUAL MACHINES</a></h3>
+                <ul class="text-left" style="margin-left: 60px;">
+                    <li>List ALl Virtual Machines</li>
+                    <li>Start Virtual Machines</li>
+                    <li>Stop Virtual Machines</li>
+                    <li>Delete Virtual Machines</li>
+
+                </ul>
+                    
+            </div>
+        </div>
+        <div data-wow-delay="0.5s" data-wow-duration="2s" class="col-md-4 column wow fadeIn margin-bottom-20">
+            <div class="text-center">
+                <div class=""><a style="color: inherit;" href=""><i class="fa icon-azure-icon-sql-database-generic fa-5x "></i></a></div>
+                <h3><a style="color: inherit;" href="">SQL DATABASES</a></h3>
+                <ul class="text-left" style="margin-left: 60px;">
+                    <li>List All SQL Servers</li>
+                    <li>List All SQL Databases</li>
+                    <li>Delete SQL Server</li>
+                    <li>Delete SQL Database</li>
+                </ul>
+                
+            </div>
+        </div>
+        <div data-wow-delay="0.5s" data-wow-duration="2s" class="col-md-4 column wow fadeIn margin-bottom-20">
+            <div class="text-center">
+                <div class=""><a style="color: inherit;" href=""><i class="fa icon-azure-icon-storage-azure fa-5x "></i></a></div>
+                <h3><a style="color: inherit;" href="">STORAGE</a></h3>
+                <ul class="text-left" style="margin-left: 60px;">
+                    <li>List All Storage Accounts</li>
+                    <li>Delete Storage Account</li>
+                </ul>
+                
+            </div>
+        </div>
+
+
+        </div>
+
+    <div class="row clearfix margin-bottom-20">
+        <div data-wow-delay="0.5s" data-wow-duration="2s" class="col-md-4 column wow fadeIn margin-bottom-20">
+            <div class="text-center">
+                <div class=""><a style="color: inherit;" href=""><i class="fa icon-azure-icon-azure-websites fa-5x "></i></a></div>
+                <h3><a style="color: inherit;" href="">WEB APPS</a></h3>
+                <p>Manage Web Application in your Azure Subscriptions.</p>
+                <ul class="text-left" style="margin-left: 60px;">
+                    <li>List ALL Web applications</li>
+                </ul>
+               
+            </div>
+        </div>
+    </div>
+</div>

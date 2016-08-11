@@ -1,0 +1,120 @@
+﻿<div ng-controller="AppServiceController" ng-init="InitializeController()">
+    
+    <div class="table-responsive ng-scope" ng-init="GetAllQueue()">
+        <table id="tblGrid" class="table table-striped">
+            <thead id="tblHead">
+                <tr>
+                    <th>Location</th>
+                    <th>Points</th>
+                    <th class="text-right">Mean</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in QueueList" class="ng-scope">
+                    <td context-menu="menuOptions">
+                        <button class="btn btn-link" data-target="#queueModalDialog" data-toggle="modal" type="button" ng-click="SelectQueue(item)">
+                            {{item.name}}
+                        </button>
+                    </td>
+                    <td class="ng-binding">{{item.location}}</td>
+                    <td class="ng-binding">{{item.location}}</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    <div tabindex="-1" class="modal in" id="queueModalDialog" role="dialog" aria-hidden="false" aria-labelledby="myModalLabel" data-keyboard="false" data-backdrop="static">
+        <div class="modal-dialog" id="commonModalDialogBox">
+            <div class="modal-content" id="commonModalDialogContent" style="top: 90.5px;">
+                <div class="modal-header">
+                    <button title="Close" class="close" id="btnXViewDatabaseServer" aria-hidden="true" type="button" data-dismiss="modal">×</button>
+                    <h4 class="modal-title" id="myModalLabel">Queue Properties</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 no-left-padding no-right-padding">
+                            <p class="control-group">
+                                <label class="control-label">Name</label>:
+                                <input name="" class="form-control" id="" ng-model="SelectedQueue.name" type="text" readonly="readonly">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 no-left-padding no-right-padding">
+                            <p class="control-group">
+                                <label class="control-label">Default Message Time To Live</label>:
+                                <input name="" class="form-control" id="" ng-model="SelectedQueue.properties.defaultMessageTimeToLive" type="text" readonly="readonly">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 no-left-padding no-right-padding">
+                            <p class="control-group">
+                                <label class="control-label">Duplicate Detection History TimeWindow</label>:
+                                <input name="" class="form-control" id="" ng-model="SelectedQueue.properties.duplicateDetectionHistoryTimeWindow" type="text" readonly="readonly">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 no-left-padding no-right-padding">
+                            <p class="control-group">
+                                <label class="control-label">Lock Duration</label>:
+                                <input name="" class="form-control" id="" ng-model="SelectedQueue.properties.lockDuration" type="text" readonly="readonly">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 no-left-padding no-right-padding">
+                            <label class="checkbox-inline">
+                                <input id="toggle-one" type="checkbox" ng-model="SelectedQueue.properties.defaultMessageTimeToLive">
+                                Dead Lettering On Message Expiration
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 no-left-padding no-right-padding">
+                            <label class="checkbox-inline">
+                                <input id="toggle-one" type="checkbox" ng-model="SelectedQueue.properties.requiresDuplicateDetection">
+                                Requires Duplicate Detection
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 no-left-padding no-right-padding">
+                            <label class="checkbox-inline">
+                                <input id="toggle-one" type="checkbox" ng-model="SelectedQueue.properties.requiresSession">
+                                Requires Session
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 no-left-padding no-right-padding">
+                            <label class="checkbox-inline">
+                                <input id="toggle-two" type="checkbox" ng-model="SelectedQueue.properties.enableBatchedOperations">
+                                Enable Batched Operations
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 no-left-padding no-right-padding">
+                            <label class="checkbox-inline">
+                                <input id="toggle-two" type="checkbox" ng-model="SelectedQueue.properties.supportOrdering">
+                                Support Ordering
+                            </label>
+                        </div>
+                    </div>
+	       
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-link" type="button" ng-click="VMOperation(ServerProp,'Delete')">
+                        <i class="fa fa-trash-o fa-2x"></i>
+                    </button>
+                    <button class="btn" type="button" data-dismiss="modal">
+                        Ok
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

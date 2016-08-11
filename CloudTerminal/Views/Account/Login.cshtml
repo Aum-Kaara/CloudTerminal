@@ -1,0 +1,32 @@
+﻿<div class="col-lg-4 thumbnail">
+    <div class="caption">
+        <h3>Sign-in to connect your Azure Subscription</h3>
+        @*<div id="org"><a href='@Url.Action("SignIn", "Account")'>
+            <img src="~/Images/org.png" style="height:65px;width:350px;margin:0px" class="img-thumbnail" /></a></div>*@
+        @using (Html.BeginForm("SignIn", "Account", new { isMSA = true }, FormMethod.Get))
+        {<span id="back" style="display:none; cursor:pointer" class="glyphicon glyphicon-arrow-left"></span>
+        <div id="msa" style="cursor:pointer"><img src="~/Images/msa.png" style="height:64px;width:350px" class="img-thumbnail" type="submit" /></div>
+        
+            <div id="msadir" style="">
+                <div class="input-group" style="width:350px">
+                    <input name="directoryName" type="text" class="form-control" placeholder="Directory Name e.g. contoso.com" aria-describedby="basic-addon2">
+                    <input name="isMSA" type="hidden" value="true" />
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="submit" ng-click="login()">Go</button>
+                    </span>
+                </div>
+                <a style="font-size:smaller; cursor:pointer" data-toggle="modal" data-target=".bs-example-modal-lg">Help me find my directory name</a>
+            </div>
+            
+        }
+
+
+    </div>
+    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class=" modal-dialog modal-lg">
+            <div class="modal-content">
+                <img src="~/Images/directory.png" />
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,149 @@
+﻿<html>
+<head>
+    <title>Cloud Terminal</title>
+    <link type="text/css" rel="stylesheet" href="Content/bootstrap.css" />
+	<link type="text/css" rel="stylesheet" href="Content/ui.jqgrid-bootstrap.css" />
+	<link type="text/css" rel="stylesheet" href="Content/dashboard.css" />
+	<link type="text/css" rel="stylesheet" href="Content/sb-admin-2.css" />
+	<link type="text/css" rel="stylesheet" href="Content/font-awesome.min.css" />
+	<link type="text/css" rel="stylesheet" href="Content/angular-block-ui.css" />
+	
+<!-- 	<link type="text/css" rel="stylesheet" href="Content/angular-block-ui.css" /> -->
+    
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+		<script src="App/Scripts/jquery-1.11.0.min.js"></script>
+
+		<script src="App/Scripts/angular.js"></script>
+	    <script src="https://code.angularjs.org/1.2.25/angular-route.js"></script>
+	<!-- 	<script src="App/Scripts/angular-block-ui.js"></script> -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		 <script src="App/Scripts/angular-filter.min.js"></script>
+        <script src="App/Scripts/adal.js"></script>
+        <script src="App/Scripts/adal-angular.js"></script>
+		<script src="http://angular-block-ui.nullest.com/angular-block-ui/angular-block-ui.js"></script>
+		
+
+		  
+		<!-- <script src="App/Services/AlertsServices.js"></script> -->
+        <script src="App/Scripts/app.js"></script>
+		
+		
+		<script src="App/Scripts/MasterController.js"></script>
+		<script src="App/Scripts/VMController.js"></script>
+		<script src="App/Scripts/StorageController.js"></script>
+		<script src="App/Scripts/AMSController.js"></script>
+		<script src="App/Scripts/BillingController.js"></script>
+		<script src="App/Scripts/GraphController.js"></script>
+		<script src="App/Scripts/DBController.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.0/morris.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/angular-morris-chart/1.2.0/angular-morris-chart.min.js"></script>
+
+		<!-- Define Services -->
+		
+
+</head>
+
+<body ng-app="AzureApp" ng-controller="MasterController">
+   
+   <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+	
+          <a href="#" class="navbar-brand"> 	  
+
+<i class="glyphicon glyphicon-cloud"></i> Cloud 
+		   Terminal <i class="fa fa-plane fa-fw"></i></a>
+		  <span class="glyphicon glyphicon-cloud" aria-hidden="true"></span>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar">
+          <ul class="nav navbar-nav navbar-right">
+		  <li><a href="#/Features">Features</a></li>
+            <li><a href="#/Home">Dashboard</a></li>
+                        <li><a href="#">Help</a></li>
+			
+			<li class="dropdown">
+    <a data-toggle="dropdown" class="dropdown-toggle" aria-expanded="false">
+        <i class="fa fa-user fa-fw"></i>
+        <i class="fa fa-caret-down"></i>
+    </a>
+    <ul class="dropdown-menu dropdown-user">
+        <li>
+            <a href="#/UserProfile">
+                <i class="fa fa-user fa-fw"></i> User Profile
+            </a>
+        </li>
+		 <li>
+            <a href="#" data-target="#commonModalDialog" data-toggle="modal">
+                <i class="fa fa-Envelope fa-fw"></i> Connect Us
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa fa-gear fa-fw"></i> Settings
+            </a>
+        </li>
+       
+        <li class="divider"></li>
+        <li>
+		<a href="#" ui-sref="login"  ng-hide="userInfo.isAuthenticated" ng-click="login()" >
+                <i class="fa fa-sign-in fa-fw"></i> Login
+            </a>
+            <a href="#" ui-sref="login" ng-show="userInfo.isAuthenticated" ng-click="logout()">
+                <i class="fa fa-sign-out fa-fw"></i> Logout
+            </a>
+        </li>
+    </ul>
+    <!-- /.dropdown-user -->
+</li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <input type="text" placeholder="Search..." class="form-control">
+          </form>
+        </div>
+      </div>
+    </nav>
+
+	<div class="container-fluid">
+      <div class="row">
+
+
+		   
+        <div class="col-sm-3  col-md-12  main">
+          
+				<div ng-view>
+
+                </div>
+				
+          </div>
+		  
+        </div>
+      </div>
+	  	  <div tabindex="-1" class="modal in" id="commonModalDialog" role="dialog" aria-hidden="false" aria-labelledby="myModalLabel" style="display: none;" data-keyboard="false" data-backdrop="static">
+    <div class="modal-dialog" id="commonModalDialogBox">
+        <div class="modal-content" id="commonModalDialogContent" style="top: 90.5px;">
+    <div class="modal-header">
+        <button title="Close" class="close" id="btnXViewDatabaseServer" aria-hidden="true" type="button" data-dismiss="modal">×</button>
+        <h4 class="modal-title" id="myModalLabel">Connect with Us</h4>
+    </div>
+    <div class="modal-body">
+	Connect with Us on cloudterminal@gmail.com                    
+
+    </div>
+    <div class="modal-footer">
+       								<button class="btn btn-link" type="button" data-dismiss="modal">
+										<i class="fa fa-remove fa-2x"></i>
+										</button>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</body>
+</html>

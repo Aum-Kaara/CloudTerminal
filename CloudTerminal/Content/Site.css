@@ -1,0 +1,39 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+.link_box {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: #f2f2f2 none repeat scroll 0 0;
+    border-color: #e7e7e7 #e7e7e7 #d6d6d6;
+    border-image: none;
+    border-radius: 1px;
+    border-style: solid;
+    border-width: 1px 1px 5px;
+    padding: 0 0 5px;
+    width: 100%;
+}
+
+.footer {
+    background-color: #f5f5f5;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+}

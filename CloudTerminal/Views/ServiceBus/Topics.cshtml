@@ -1,0 +1,26 @@
+﻿<div ng-controller="AppServiceController" ng-init="InitializeController()">
+
+    <div class="table-responsive ng-scope" ng-init="GetAllTopics()">
+        <table id="tblGrid" class="table table-striped">
+            <thead id="tblHead">
+                <tr>
+                    <th>Location</th>
+                    <th>Points</th>
+                    <th class="text-right">Mean</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in TopicList" class="ng-scope">
+                    <td>
+                        <a class="btn class=" btn btn-link">
+                            {{item.name}}
+                        </a>
+                    </td>
+                    <td class="ng-binding">{{item.location}}</td>
+                    <td class="ng-binding">{{item.location}}</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>

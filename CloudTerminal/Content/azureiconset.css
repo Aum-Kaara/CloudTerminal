@@ -1,0 +1,725 @@
+@font-face {
+    font-family: 'azureiconset';
+    src:    url('../fonts/azureiconset.eot?75iei7');
+    src:    url('../fonts/azureiconset.eot?75iei7#iefix') format('embedded-opentype'),
+        url('../fonts/azureiconset.ttf?75iei7') format('truetype'),
+        url('../fonts/azureiconset.woff?75iei7') format('woff'),
+        url('../fonts/azureiconset.svg?75iei7#azureiconset') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'azureiconset' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-azure-icon-service-bus-topics-and-subscriptions:before {
+    content: "\e900";
+}
+.icon-azure-icon-service-bus-queues:before {
+    content: "\e901";
+}
+.icon-azure-icon-service-bus:before {
+    content: "\e902";
+}
+.icon-azure-icon-unhealthy:before {
+    content: "\e903";
+}
+.icon-azure-icon-key-permissions:before {
+    content: "\e904";
+}
+.icon-azure-icon-bi-product-icon:before {
+    content: "\e90c";
+}
+.icon-azure-icon-app-service:before {
+    content: "\e90d";
+}
+.icon-azure-icon-dropbox-code-source:before {
+    content: "\e90e";
+}
+.icon-azure-icon-virtual-network-box:before {
+    content: "\e90f";
+}
+.icon-azure-icon-web-app:before {
+    content: "\e910";
+}
+.icon-azure-icon-app-service-frontend .path1:before {
+    content: "\e911";
+    color: rgb(0, 114, 198);
+}
+.icon-azure-icon-app-service-frontend .path2:before {
+    content: "\e912";
+    margin-left: -1em;
+    color: rgb(160, 161, 162);
+}
+.icon-azure-icon-app-service-frontend .path3:before {
+    content: "\e913";
+    margin-left: -1em;
+    color: rgba(255, 255, 255, 0.2);
+}
+.icon-azure-icon-app-service-frontend .path4:before {
+    content: "\e914";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+.icon-azure-icon-app-service-frontend .path5:before {
+    content: "\e915";
+    margin-left: -1em;
+    color: rgb(89, 180, 217);
+}
+.icon-azure-icon-app-service-frontend .path6:before {
+    content: "\e916";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+.icon-azure-icon-app-service-frontend .path7:before {
+    content: "\e917";
+    margin-left: -1em;
+    color: rgb(89, 180, 217);
+}
+.icon-azure-icon-app-service-frontend .path8:before {
+    content: "\e918";
+    margin-left: -1em;
+    color: rgba(255, 255, 255, 0.2);
+}
+.icon-azure-icon-column:before {
+    content: "\e919";
+}
+.icon-azure-icon-stored-procedure:before {
+    content: "\e91a";
+}
+.icon-azure-icon-trigger:before {
+    content: "\e91b";
+}
+.icon-azure-icon-user-defined-function:before {
+    content: "\e91c";
+}
+.icon-azure-icon-access-control:before {
+    content: "\e91d";
+}
+.icon-azure-icon-api-apps:before {
+    content: "\e91e";
+}
+.icon-azure-icon-api-management:before {
+    content: "\e91f";
+}
+.icon-azure-icon-app-service-ipaddress .path1:before {
+    content: "\e920";
+    color: rgb(89, 180, 217);
+}
+.icon-azure-icon-app-service-ipaddress .path2:before {
+    content: "\e921";
+    margin-left: -1em;
+    color: rgb(160, 161, 162);
+}
+.icon-azure-icon-app-service-ipaddress .path3:before {
+    content: "\e922";
+    margin-left: -1em;
+    color: rgba(255, 255, 255, 0.2);
+}
+.icon-azure-icon-app-service-ipaddress .path4:before {
+    content: "\e923";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+.icon-azure-icon-app-service-ipaddress .path5:before {
+    content: "\e924";
+    margin-left: -1em;
+    color: rgb(89, 180, 217);
+}
+.icon-azure-icon-app-service-ipaddress .path6:before {
+    content: "\e925";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+.icon-azure-icon-app-service-ipaddress .path7:before {
+    content: "\e926";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+.icon-azure-icon-app-service-ipaddress .path8:before {
+    content: "\e927";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+.icon-azure-icon-app-service-ipaddress .path9:before {
+    content: "\e928";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+.icon-azure-icon-app-service-workerpools .path1:before {
+    content: "\e929";
+    color: rgb(89, 180, 217);
+}
+.icon-azure-icon-app-service-workerpools .path2:before {
+    content: "\e92a";
+    margin-left: -1em;
+    color: rgba(255, 255, 255, 0.1);
+}
+.icon-azure-icon-app-service-workerpools .path3:before {
+    content: "\e92b";
+    margin-left: -1em;
+    color: rgb(62, 62, 62);
+}
+.icon-azure-icon-app-service-workerpools .path4:before {
+    content: "\e92c";
+    margin-left: -1em;
+    color: rgba(241, 241, 241, 0.2);
+}
+.icon-azure-icon-app-service-workerpools .path5:before {
+    content: "\e92d";
+    margin-left: -1em;
+    color: rgb(89, 180, 217);
+}
+.icon-azure-icon-app-service-workerpools .path6:before {
+    content: "\e92e";
+    margin-left: -1em;
+    color: rgb(62, 62, 62);
+}
+.icon-azure-icon-app-service-workerpools .path7:before {
+    content: "\e92f";
+    margin-left: -1em;
+    color: rgba(241, 241, 241, 0.2);
+}
+.icon-azure-icon-app-service-workerpools .path8:before {
+    content: "\e930";
+    margin-left: -1em;
+    color: rgb(89, 180, 217);
+}
+.icon-azure-icon-app-service-workerpools .path9:before {
+    content: "\e931";
+    margin-left: -1em;
+    color: rgb(62, 62, 62);
+}
+.icon-azure-icon-app-service-workerpools .path10:before {
+    content: "\e932";
+    margin-left: -1em;
+    color: rgba(241, 241, 241, 0.2);
+}
+.icon-azure-icon-app-service-workerpools .path11:before {
+    content: "\e933";
+    margin-left: -1em;
+    color: rgb(89, 180, 217);
+}
+.icon-azure-icon-app-service-workerpools .path12:before {
+    content: "\e934";
+    margin-left: -1em;
+    color: rgb(62, 62, 62);
+}
+.icon-azure-icon-app-service-workerpools .path13:before {
+    content: "\e935";
+    margin-left: -1em;
+    color: rgba(241, 241, 241, 0.2);
+}
+.icon-azure-icon-app-service-workerpools .path14:before {
+    content: "\e936";
+    margin-left: -1em;
+    color: rgb(89, 180, 217);
+}
+.icon-azure-icon-app-services:before {
+    content: "\e937";
+}
+.icon-azure-icon-application-gateway .path1:before {
+    content: "\e938";
+    color: rgb(0, 120, 215);
+}
+.icon-azure-icon-application-gateway .path2:before {
+    content: "\e939";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+.icon-azure-icon-application-gateway .path3:before {
+    content: "\e93a";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+.icon-azure-icon-application-gateway .path4:before {
+    content: "\e93b";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+.icon-azure-icon-application-gateway .path5:before {
+    content: "\e93c";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+.icon-azure-icon-application-insights:before {
+    content: "\e93d";
+}
+.icon-azure-icon-auto-scaling:before {
+    content: "\e93e";
+}
+.icon-azure-icon-azure-automatic-load-balancer:before {
+    content: "\e93f";
+}
+.icon-azure-icon-azure-active-directory:before {
+    content: "\e940";
+}
+.icon-azure-icon-azure-alert:before {
+    content: "\e941";
+}
+.icon-azure-icon-azure-automation:before {
+    content: "\e942";
+}
+.icon-azure-icon-azure-batch:before {
+    content: "\e943";
+}
+.icon-azure-icon-azure-cache-including-redis:before {
+    content: "\e944";
+}
+.icon-azure-icon-azure-data-catalog:before {
+    content: "\e945";
+}
+.icon-azure-icon-azure-files:before {
+    content: "\e946";
+}
+.icon-azure-icon-azure-load-balancer-feature .path1:before {
+    content: "\e947";
+    color: rgb(0, 120, 215);
+}
+.icon-azure-icon-azure-load-balancer-feature .path2:before {
+    content: "\e948";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+.icon-azure-icon-azure-load-balancer-feature .path3:before {
+    content: "\e949";
+    margin-left: -1em;
+    color: rgb(0, 120, 215);
+}
+.icon-azure-icon-azure-marketplace:before {
+    content: "\e94a";
+}
+.icon-azure-icon-azure-rights-management:before {
+    content: "\e94b";
+}
+.icon-azure-icon-azure-sdk:before {
+    content: "\e94c";
+}
+.icon-azure-icon-azure-search:before {
+    content: "\e94d";
+}
+.icon-azure-icon-azure-sql-database:before {
+    content: "\e94e";
+}
+.icon-azure-icon-azure-subscription:before {
+    content: "\e94f";
+}
+.icon-azure-icon-azure-websites:before {
+    content: "\e950";
+}
+.icon-azure-icon-backup-service:before {
+    content: "\e951";
+}
+.icon-azure-icon-bitbucket-code-source:before {
+    content: "\e952";
+}
+.icon-azure-icon-biztalk-services:before {
+    content: "\e953";
+}
+.icon-azure-icon-cloud-service:before {
+    content: "\e954";
+}
+.icon-azure-icon-cloud-office-365:before {
+    content: "\e955";
+}
+.icon-azure-icon-code-plex:before {
+    content: "\e956";
+}
+.icon-azure-icon-compute:before {
+    content: "\e957";
+}
+.icon-azure-icon-content-delivery-network-cdn:before {
+    content: "\e958";
+}
+.icon-azure-icon-data-factory:before {
+    content: "\e959";
+}
+.icon-azure-icon-data-lake:before {
+    content: "\e95a";
+}
+.icon-azure-icon-data-services:before {
+    content: "\e95b";
+}
+.icon-azure-icon-directory-service-health:before {
+    content: "\e95c";
+}
+.icon-azure-icon-documentdb:before {
+    content: "\e95d";
+}
+.icon-azure-icon-event-hubs:before {
+    content: "\e95e";
+}
+.icon-azure-icon-express-route:before {
+    content: "\e95f";
+}
+.icon-azure-icon-git-repository:before {
+    content: "\e960";
+}
+.icon-azure-icon-github:before {
+    content: "\e961";
+}
+.icon-azure-icon-hd-insight:before {
+    content: "\e962";
+}
+.icon-azure-icon-health-monitoring:before {
+    content: "\e963";
+}
+.icon-azure-icon-healthy:before {
+    content: "\e964";
+}
+.icon-azure-icon-hybrid-connection-manager-for-biz-talk-hybrid-connection:before {
+    content: "\e965";
+}
+.icon-azure-icon-hybrid-connection:before {
+    content: "\e966";
+}
+.icon-azure-icon-iot-hub:before {
+    content: "\e967";
+}
+.icon-azure-icon-key-vault:before {
+    content: "\e968";
+}
+.icon-azure-icon-linux-penguin-mono:before {
+    content: "\e969";
+}
+.icon-azure-icon-logic-app:before {
+    content: "\e96a";
+}
+.icon-azure-icon-machine-learning:before {
+    content: "\e96b";
+}
+.icon-azure-icon-media-services:before {
+    content: "\e96c";
+}
+.icon-azure-icon-microsoft-account:before {
+    content: "\e96d";
+}
+.icon-azure-icon-microsoft-azure:before {
+    content: "\e96e";
+}
+.icon-azure-icon-mobile-engagement:before {
+    content: "\e96f";
+}
+.icon-azure-icon-mobile-services:before {
+    content: "\e970";
+}
+.icon-azure-icon-multi-factor-authentication:before {
+    content: "\e971";
+}
+.icon-azure-icon-mysql-database:before {
+    content: "\e972";
+}
+.icon-azure-icon-notification-hubs:before {
+    content: "\e973";
+}
+.icon-azure-icon-notification-topic:before {
+    content: "\e974";
+}
+.icon-azure-icon-office-365:before {
+    content: "\e975";
+}
+.icon-azure-icon-office-subscription:before {
+    content: "\e976";
+}
+.icon-azure-icon-operational-insights:before {
+    content: "\e977";
+}
+.icon-azure-icon-os-image:before {
+    content: "\e978";
+}
+.icon-azure-icon-redis-logo .path1:before {
+    content: "\e979";
+    color: rgb(99, 100, 102);
+}
+.icon-azure-icon-redis-logo .path2:before {
+    content: "\e97a";
+    margin-left: -3em;
+    color: rgb(99, 100, 102);
+}
+.icon-azure-icon-redis-logo .path3:before {
+    content: "\e97b";
+    margin-left: -3em;
+    color: rgb(99, 100, 102);
+}
+.icon-azure-icon-redis-logo .path4:before {
+    content: "\e97c";
+    margin-left: -3em;
+    color: rgb(99, 100, 102);
+}
+.icon-azure-icon-redis-logo .path5:before {
+    content: "\e97d";
+    margin-left: -3em;
+    color: rgb(99, 100, 102);
+}
+.icon-azure-icon-redis-logo .path6:before {
+    content: "\e97e";
+    margin-left: -3em;
+    color: rgb(164, 30, 17);
+}
+.icon-azure-icon-redis-logo .path7:before {
+    content: "\e97f";
+    margin-left: -3em;
+    color: rgb(216, 44, 32);
+}
+.icon-azure-icon-redis-logo .path8:before {
+    content: "\e980";
+    margin-left: -3em;
+    color: rgb(164, 30, 17);
+}
+.icon-azure-icon-redis-logo .path9:before {
+    content: "\e981";
+    margin-left: -3em;
+    color: rgb(216, 44, 32);
+}
+.icon-azure-icon-redis-logo .path10:before {
+    content: "\e982";
+    margin-left: -3em;
+    color: rgb(164, 30, 17);
+}
+.icon-azure-icon-redis-logo .path11:before {
+    content: "\e983";
+    margin-left: -3em;
+    color: rgb(216, 44, 32);
+}
+.icon-azure-icon-redis-logo .path12:before {
+    content: "\e984";
+    margin-left: -3em;
+    color: rgb(255, 255, 255);
+}
+.icon-azure-icon-redis-logo .path13:before {
+    content: "\e985";
+    margin-left: -3em;
+    color: rgb(255, 255, 255);
+}
+.icon-azure-icon-redis-logo .path14:before {
+    content: "\e986";
+    margin-left: -3em;
+    color: rgb(255, 255, 255);
+}
+.icon-azure-icon-redis-logo .path15:before {
+    content: "\e987";
+    margin-left: -3em;
+    color: rgb(122, 12, 0);
+}
+.icon-azure-icon-redis-logo .path16:before {
+    content: "\e988";
+    margin-left: -3em;
+    color: rgb(173, 33, 21);
+}
+.icon-azure-icon-remote-app:before {
+    content: "\e989";
+}
+.icon-azure-icon-resource-group:before {
+    content: "\e98a";
+}
+.icon-azure-icon-rdp-remoting-file:before {
+    content: "\e98b";
+}
+.icon-azure-icon-scale-alt .path1:before {
+    content: "\e98c";
+    color: rgb(160, 161, 162);
+}
+.icon-azure-icon-scale-alt .path2:before {
+    content: "\e98d";
+    margin-left: -1em;
+    color: rgba(255, 255, 255, 0.2);
+}
+.icon-azure-icon-scale-alt .path3:before {
+    content: "\e98e";
+    margin-left: -1em;
+    color: rgb(89, 180, 217);
+}
+.icon-azure-icon-scale-alt .path4:before {
+    content: "\e98f";
+    margin-left: -1em;
+    color: rgb(184, 212, 50);
+}
+.icon-azure-icon-scale-alt .path5:before {
+    content: "\e990";
+    margin-left: -1em;
+    color: rgb(160, 161, 162);
+}
+.icon-azure-icon-scale-alt .path6:before {
+    content: "\e991";
+    margin-left: -1em;
+    color: rgba(255, 255, 255, 0.2);
+}
+.icon-azure-icon-scale-alt .path7:before {
+    content: "\e992";
+    margin-left: -1em;
+    color: rgb(89, 180, 217);
+}
+.icon-azure-icon-scale-alt .path8:before {
+    content: "\e993";
+    margin-left: -1em;
+    color: rgb(184, 212, 50);
+}
+.icon-azure-icon-scale-alt .path9:before {
+    content: "\e994";
+    margin-left: -1em;
+    color: rgb(122, 122, 122);
+}
+.icon-azure-icon-scale-alt .path10:before {
+    content: "\e995";
+    margin-left: -1em;
+    color: rgb(160, 161, 162);
+}
+.icon-azure-icon-scale-alt .path11:before {
+    content: "\e996";
+    margin-left: -1em;
+    color: rgba(255, 255, 255, 0.2);
+}
+.icon-azure-icon-scale-alt .path12:before {
+    content: "\e997";
+    margin-left: -1em;
+    color: rgb(89, 180, 217);
+}
+.icon-azure-icon-scale-alt .path13:before {
+    content: "\e998";
+    margin-left: -1em;
+    color: rgb(160, 161, 162);
+}
+.icon-azure-icon-scale-alt .path14:before {
+    content: "\e999";
+    margin-left: -1em;
+    color: rgb(184, 212, 50);
+}
+.icon-azure-icon-scheduler:before {
+    content: "\e99a";
+}
+.icon-azure-icon-service-package:before {
+    content: "\e99b";
+}
+.icon-azure-icon-service-bus-queue:before {
+    content: "\e99c";
+}
+.icon-azure-icon-service-bus-relay:before {
+    content: "\e99d";
+}
+.icon-azure-icon-service-endpoint:before {
+    content: "\e99e";
+}
+.icon-azure-icon-service-fabric:before {
+    content: "\e99f";
+}
+.icon-azure-icon-site-recovery:before {
+    content: "\e9a0";
+}
+.icon-azure-icon-sql-data-sync:before {
+    content: "\e9a1";
+}
+.icon-azure-icon-sql-data-warehouse:before {
+    content: "\e9a2";
+}
+.icon-azure-icon-sql-database-generic:before {
+    content: "\e9a3";
+}
+.icon-azure-icon-sql-database-premium:before {
+    content: "\e9a4";
+}
+.icon-azure-icon-sql-reporting-deprecated:before {
+    content: "\e9a5";
+}
+.icon-azure-icon-startup-task:before {
+    content: "\e9a6";
+}
+.icon-azure-icon-storage-azure:before {
+    content: "\e9a7";
+}
+.icon-azure-icon-storage-blob:before {
+    content: "\e9a8";
+}
+.icon-azure-icon-storage-queue:before {
+    content: "\e9a9";
+}
+.icon-azure-icon-storage-table:before {
+    content: "\e9aa";
+}
+.icon-azure-icon-stor-simple:before {
+    content: "\e9ab";
+}
+.icon-azure-icon-stream-analytics:before {
+    content: "\e9ac";
+}
+.icon-azure-icon-traffic-manager:before {
+    content: "\e9ad";
+}
+.icon-azure-icon-unidentified-feature-object:before {
+    content: "\e9ae";
+}
+.icon-azure-icon-vhd-data-disk:before {
+    content: "\e9af";
+}
+.icon-azure-icon-vhd:before {
+    content: "\e9b0";
+}
+.icon-azure-icon-virtual-machine-container .path1:before {
+    content: "\e9b1";
+    color: rgb(0, 120, 215);
+}
+.icon-azure-icon-virtual-machine-container .path2:before {
+    content: "\e9b2";
+    margin-left: -0.7724609375em;
+    color: rgb(255, 255, 255);
+}
+.icon-azure-icon-virtual-machine-container .path3:before {
+    content: "\e9b3";
+    margin-left: -0.7724609375em;
+    color: rgb(255, 255, 255);
+}
+.icon-azure-icon-virtual-machine-container .path4:before {
+    content: "\e9b4";
+    margin-left: -0.7724609375em;
+    color: rgb(255, 255, 255);
+}
+.icon-azure-icon-virtual-machine-container .path5:before {
+    content: "\e9b5";
+    margin-left: -0.7724609375em;
+    color: rgb(255, 255, 255);
+}
+.icon-azure-icon-virtual-machine:before {
+    content: "\e9b6";
+}
+.icon-azure-icon-virtual-network:before {
+    content: "\e9b7";
+}
+.icon-azure-icon-visual-studio-online:before {
+    content: "\e9b8";
+}
+.icon-azure-icon-vm-symbol-only:before {
+    content: "\e9b9";
+}
+.icon-azure-icon-vpn-gateway:before {
+    content: "\e9ba";
+}
+.icon-azure-icon-web-role:before {
+    content: "\e9bb";
+}
+.icon-azure-icon-web-roles:before {
+    content: "\e9bc";
+}
+.icon-azure-icon-web-jobs:before {
+    content: "\e9bd";
+}
+.icon-azure-icon-work-account:before {
+    content: "\e9be";
+}
+.icon-azure-icon-worker-role:before {
+    content: "\e9bf";
+}
+.icon-azure-icon-worker-roles:before {
+    content: "\e9c0";
+}
+
